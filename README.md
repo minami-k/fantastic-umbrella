@@ -1,6 +1,6 @@
 ## Steps to run the application
 
-### Update your pip 
+### Update your pip (note: double dash in --upgrade)
 > python3 -m pip install —upgrade pip
 
 ### Create a virtual environment
