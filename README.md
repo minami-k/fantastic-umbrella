@@ -8,5 +8,7 @@
 
 ### To access admin panel, first migrate and create a user...
 > docker-compose run web sh -c "python manage.py makemigrations"
+
 > docker-compose run web sh -c "python manage.py migrate"
+
 > docker-compose run web sh -c "python manage.py createsuperuser"
