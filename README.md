@@ -12,3 +12,7 @@
 > docker-compose run web sh -c "python manage.py migrate"
 
 > docker-compose run web sh -c "python manage.py createsuperuser"
+
+
+### To start a todo application
+> docker-compose run web sh -c "python manage.py startapp todo"
