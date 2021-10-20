@@ -1,4 +1,19 @@
-# fantastic-umbrella
+## Steps to run the application
+
+### Update your pip 
+> python3 -m pip install —upgrade pip
+
+### Create a virtual environment
+> python3 -m venv venv
+### Activate the virtual environment
+> source venv/bin/activate (mac/linux)
+
+> venv\Scripts\activate (windows - command prompt)
+
+```bash
+Side note: To deactivate virtual environment, run:
+deactivate
+```
 
 ### To create Docker Image for our project
 > docker-compose run web sh -c "django-admin startproject todolist ."
