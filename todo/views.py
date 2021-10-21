@@ -15,8 +15,8 @@ def signupuser(request):
         if request.POST['password1'] == request.POST['password2']:
 
             try:
-                #check
-                user = User.objects.create_user(request.POST['username'], request.POST['password1'])
+                #create_user(username, email=None, password=None, **extra_fields)
+                user = User.objects.create_user(request.POST['username'], password=request.POST['password1'])
                 user.save()
                 login(request, user)
                 return redirect('currenttodos')
