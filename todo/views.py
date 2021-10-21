@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
 from django.db import IntegrityError
+from .forms import TodoForm
 
 def home(request):
     return render(request, 'todo/home.html')
@@ -75,3 +76,6 @@ def currenttodos(request):
         request, 
         'todo/currenttodos.html'
         )
+
+def createtodo(request):
+    return render(request, 'todo/createtodo.html', { 'form' : TodoForm()})
