@@ -5,8 +5,13 @@
 
 ### Create a virtual environment
 > python3 -m venv venv
+
+### Install the virtual environment (Skip if you have)
+> pip3 install virtualenv
 ### Activate the virtual environment
 > source venv/bin/activate (mac/linux)
+
+> . venv/bin/activate (mac/linux)
 
 > venv\Scripts\activate (windows - command prompt)
 
