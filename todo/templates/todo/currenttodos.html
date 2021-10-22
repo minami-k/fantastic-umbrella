@@ -3,16 +3,16 @@
 {% block content %}
 <h1>Current Todo List</h1>
 
-<ul>
+
     {% for todo in todos %}
     
-        <li>
-            <h3>{{todo.title}}</h3>
-            <p>{{todo.memo}}</p>
-        </li>
+        <div>
+            <p>{{todo.id}}</p>
+            <a href="{% url 'viewtodo' todo.id  %}">{{todo.title}}</a>
+        </div>
     
     {% endfor %}
-</ul>
+
 
 
 {% endblock %}
